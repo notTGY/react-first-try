@@ -2,11 +2,12 @@ import React from "react";
 import Calendar from "./Calendar/Calendar";
 import DayManager from "./DayManager/DayManager";
 import Timetable from "./Timetable/Timetable";
+import Header from './Header/Header'
 
 function App() {
   return (
     <div className="App">
-      <h1>Cal endar</h1>
+      <Header />
 
       <Calendar />
 
