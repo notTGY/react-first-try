@@ -23,7 +23,7 @@
 }
 
 .CalendarCell:active {
-  padding: 30px;
+  background: linear-gradient(#0FF, #00F);
 }
 
 ::selection {

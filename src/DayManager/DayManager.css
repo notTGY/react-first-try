@@ -1,0 +1,28 @@
+.DayManagerWrapper {
+  border: 1px solid #ccc;
+  background: linear-gradient(#FFF, #DDD);
+  width: 200px;
+  height: 250px;
+  margin-left: 350px;
+  margin-top: -240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+._day {
+  font: monospace;
+  font-size: 100px;
+  display: block;
+}
+
+._month {
+  font: monospace;
+  font-size: 40px;
+  display: block;
+}
