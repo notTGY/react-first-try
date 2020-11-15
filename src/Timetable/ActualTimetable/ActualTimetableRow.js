@@ -5,7 +5,7 @@ function ActualTimetableRow({ time, para }) {
   return (
     <tr>
       <td className="TimetableTd">{time}</td>
-      <td className="TimetableTd">{para.value}</td>
+      <td className="TimetableTd">{para}</td>
     </tr>
   );
 }

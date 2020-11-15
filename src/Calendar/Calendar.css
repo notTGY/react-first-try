@@ -30,3 +30,6 @@
 ::selection {
   opacity: 0;
 }
+.highlited_current_date {
+  border: 2px solid #CC2;
+}

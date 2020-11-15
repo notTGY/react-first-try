@@ -1,5 +1,10 @@
+import bigData from '../bigData/1-kurs-osen-2020.js'
 function TimetableData() {
-  return [
+  return bigData;
+
+
+
+  /*return [
     { value: "" },
     { value: "" },
     { value: "" },
@@ -11,7 +16,7 @@ function TimetableData() {
     { value: "" },
     { value: "" },
     { value: "" }
-  ];
+  ];*/
 }
 
 export default TimetableData;

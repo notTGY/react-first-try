@@ -7,11 +7,11 @@ const monthData = MonthData();
 let hook;
 
 export function focusDate(d, m) {
-  hook({ day: d, month: monthData[m].name });
+  hook({ day: d, month:m });
 }
 
 function DayManager({ isDayShown, day, month }) {
-  const [focus, setFocus] = useState({ day, month: monthData[month].name });
+  const [focus, setFocus] = useState({ day, month });
   hook = setFocus;
 
   return (
@@ -20,7 +20,7 @@ function DayManager({ isDayShown, day, month }) {
         return (
           <div className="container">
             <span className="_day">{focus.day}</span>
-            <span className="_month">{focus.month}</span>
+            <span className="_month">{monthData[focus.month].name}</span>
           </div>
         );
       })()}
