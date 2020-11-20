@@ -1,8 +1,8 @@
 import React from "react";
 import Calendar from "./Calendar/Calendar";
-import DayManager from "./DayManager/DayManager";
+import DayManager, { getDayOfWeek } from "./DayManager/DayManager";
 import Timetable from "./Timetable/Timetable";
-import Header from './Header/Header'
+import Header from "./Header/Header";
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
         isDayShown={true}
         day={new Date().getDate()}
         month={new Date().getMonth()}
+        date={new Date()}
       />
 
       <Timetable />

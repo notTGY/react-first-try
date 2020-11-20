@@ -1,7 +1,7 @@
 import React from "react";
 
 function GroupOption({ opt }) {
-  return <option>{opt}</option>;
+  return <option value={opt}>{opt}</option>;
 }
 
 export default GroupOption;

@@ -1,9 +1,18 @@
 import React from "react";
 import "./Calendar.css";
 import { focusDate } from "../DayManager/DayManager";
+import { updateDate } from '../Timetable/Timetable';
 
 function clickHandler(d, m) {
-  focusDate(d, m);
+  let date = new Date();
+  date.setDate(d);
+  date.setMonth(m);
+  focusDate(d, m, date);
+  let dow = date.getDay();
+  if (dow == 0) {
+    updateDate(6);
+  }
+  updateDate(dow-1);
 }
 
 const styles = {
